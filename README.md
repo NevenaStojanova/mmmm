@@ -14,6 +14,7 @@ private float velocityX;
 private float velocityY;
 
 public Ball(float x, float y, float radius, float velocity, float angle)
+
 {
     X = x;
     Y = y;
