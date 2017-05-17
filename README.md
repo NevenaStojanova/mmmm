@@ -137,8 +137,7 @@ Public override void Pulse(int percent)
 4. Move drawing
 Vo LinesDoc
 Public void Move(int dx, int dy)
-	
-        {	
+	 {	
             foreach (Line line in lines)	
             {	
                 line.Start = new Point(line.Start.X + dx, 	
@@ -150,8 +149,7 @@ Public void Move(int dx, int dy)
         }	
 
 private void undoToolStripMenuItem_Click(object sender, EventArgs e)
-	
-        {
+       {
             document.Undo();
             Invalidate(true);
         }
@@ -162,8 +160,7 @@ Vo Form1
 
 LinesDocument document;
 private void Form1_KeyDown(object sender, KeyEventArgs e)
-	
-        {
+	  {
             if (e.KeyCode == Keys.Up)
             {
                 document.Move(0, -5);
@@ -238,8 +235,7 @@ private void openFile()
 
 7. Form-Closing
 private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-	
-        {
+    {
             DialogResult result = MessageBox.Show("Save document and exit", "Save document?", MessageBoxButtons.YesNoCancel);
             if (result == System.Windows.Forms.DialogResult.Cancel)
             {
